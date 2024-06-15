@@ -70,7 +70,8 @@ label{
 }
 
 #body-section{
-  background: url("/images/main-bg.jpg") no-repeat;
+  background: url("/images/main-bg.jpg") no-repeat;   
+  /* img url - https: //images.unsplash.com/photo-1517455750740-b077a3779e5c?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJvdXF1ZXRzfGVufDB8MHwwfHx8MA%3D%3D */
     background-size: cover;
     margin: 0em;
   width: 100%;
@@ -107,6 +108,7 @@ label{
 
 #body-section-2 {
   background: url("/images/main-bg.jpg") no-repeat;
+  /* image url - https: //images.unsplash.com/photo-1517455750740-b077a3779e5c?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJvdXF1ZXRzfGVufDB8MHwwfHx8MA%3D%3D */
  
   background-size: cover;
   margin: 0em;
