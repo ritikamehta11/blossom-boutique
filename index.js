@@ -124,3 +124,6 @@ async function addItem(item) {
     let flower = await db.collection("items").insertOne(item);
     console.log(flower);
 }
+
+
+//all images are taken from unsplash
