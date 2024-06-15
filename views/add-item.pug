@@ -1,0 +1,22 @@
+extends layout
+block layout-content 
+  .main-content-2
+    h1.heading Add A Product 
+    // creating  a form to enter an item
+    form(method="POST" action="/catalogue/add/submit")#add-item-form
+      div 
+        label(for="name-item") Name: 
+        input(for="name" id="name-item" name="itemName" type="text" required)
+      div 
+        label(for="price-item") Price: 
+        input(for="name" id="price-item" name="itemPrice" type="number" required)
+      div 
+        label(for="desc-item") Desc: 
+        input(for="name" id="desc-item" name="itemDesc" type="textarea" required)
+      div
+        label(for='image') Image Name:
+        input(type='text', name='itemImage',placeholder="e.g rose.jpg" required)
+      div#add-submit-btn
+        button(type='submit') Add item
+      a(href='/catalogue')#catalogue-link Back to Catalogue
+    

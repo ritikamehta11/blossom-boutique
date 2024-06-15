@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+body{
+  padding: 0;
+  margin: 0;
+  /* background-color: rgb(158, 232, 11); */
+  font-family: "Playfair Display", serif;
+  box-sizing: border-box;
+/* position: fixed; */
+  top: 0;
+  left: 0;
+  /* bottom: 0; */
+  right: 0;
+  overflow: auto;
+  
+}
+
+
+/* common css */
+
+img {
+  width: 3em;
+  height: 3em;
+}
+
+h1 {
+  margin: 0;
+}
+p{
+  font-size: 500;
+}
+a {
+  text-decoration: none;
+}
+
+#catalogue-link,
+#add-link {
+  color: rgb(60, 16, 3);
+  font-size: 1.2em;
+  text-decoration: underline;
+}
+
+.heading{
+  color: rgb(60, 16, 3);
+  margin-bottom: 1em;
+}
+
+input{
+  width: 40%;
+ 
+  
+}
+label{
+  width: 10em;
+  padding: 0.3em;
+  display: inline-block;
+}
+
+/* MAIN-PAGE CSS */
+
+#nav-main{
+  height: 4em;
+    width: 100%;
+    /* background-color: rgba(255, 255, 255, 0.333); */
+    /* margin: 0 0 2em 0; */
+    display: flex;
+    justify-content: flex-start;
+    gap: 20%;
+    align-items: center;
+
+}
+
+#body-section{
+  background: url("/images/main-bg.jpg") no-repeat;
+    background-size: cover;
+    margin: 0em;
+  width: 100%;
+  height: 100%;
+  padding: 10em 0em;
+
+}
+
+.main-content {
+  height: 60%;
+  min-height: 50%;
+  max-height: fit-content;
+  width: fit-content;
+  min-width: 30%;
+  max-width: 60%;
+  margin: auto;
+  padding: 3em 5em;
+  background-color: rgba(255, 255, 255, 0.648);
+  
+
+}
+.nav>ul>{
+  text-decoration: none;
+}
+
+
+
+.logo>a{
+  font-size: 2em;
+  font-weight: 600;
+  color: rgb(60, 3, 3);
+}
+/* other pages main css */
+
+#body-section-2 {
+  background: url("/images/main-bg.jpg") no-repeat;
+ 
+  background-size: cover;
+  margin: 0em;
+  width: 100%;
+  height: 50%;
+  padding: 0em 0em;
+
+}
+.main-content-2
+ {
+  height: 60%;
+  /* width: fit-content; */
+  min-width: 30%;
+  max-width: 80%;
+  margin: auto;
+  padding: 3em 5em;
+  background-color: rgba(255, 255, 255, 0.648);
+  overflow: scroll;
+
+}
+
+/* navigation */
+#nav-catalogue {
+  height: 4em;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.333);
+  margin: 0 0 2em 0 ;
+  display: flex;
+  justify-content: center;
+  gap: 20%;
+  align-items: center;
+  
+}
+#nav-main>nav>ul, #nav-catalogue>nav>ul{
+  display:flex ;
+  list-style: none;
+  justify-content: space-around;
+}
+#nav-main>nav>ul>li>a, #nav-catalogue>nav>ul>li>a{
+  margin-left: 2em;
+  color: rgba(60, 16, 3, 0.719);
+  font-weight: 600;
+  
+}
+#nav-main>nav>ul>li>a:hover,#nav-catalogue>nav>ul>li>a:hover {
+  color: rgb(60, 16, 3);
+}
+
+.head{
+  display:flex;
+justify-content: flex-start;
+gap: 8em;
+align-items: center;
+padding: 0em 2em ;}
+
+
+/* CATALOGUE PAGE */
+
+#bouquets{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 40px;
+  padding: 20px;
+  list-style: none;
+  
+}
+#bouquets>li{
+  width: 80%;
+  padding: 2em;
+  /* height: fit-content; */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #eaeaeacf;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: fit-content;
+  min-height: 18em;
+
+}
+
+#bouquets>li>p, #bouquets>li>div{
+  margin: 0.3em;
+}
+
+#bouquets>li>div>img{
+  width: 60%;
+  height: auto;
+
+}
+
+#mainpage-content{
+  width: 50%;
+ 
+}
+
+#mainpage-content>p{ line-height: 2em;}
+
+
+
+
+/* Add item page */
+#add-item-form{
+width: 100%;
+}
+
+#add-submit-btn{
+  padding: 0.5em;
+  text-align: center;
+  
+
+}
+#add-submit-btn>button{
+background-color: rgba(60, 16, 3, 0.779);
+padding: 0.7em 1em;
+cursor: pointer; 
+color: #ddd;}
+#add-item-form>#catalogue-link{
+  font-size: 01em;
+}
+
+
+/* about us page  */
+
+#team {
+  margin-top: 0.5em;
+}
+
+#team>h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+.members{
+  display: flex;
+  gap: 2em;
+}
+.team-member {
+  height: 14em;
+  margin-bottom: 20px;
+  margin: 3em;
+}
+
+.team-member h4 {
+  margin: 0 0 5px;
+}
+
+.team-member>img{
+  width: 8em;
+  height: auto;
+}
+#contact>ul {
+  list-style: none;
+  padding: 0;
+}

@@ -1,0 +1,28 @@
+doctype html 
+html 
+  head
+    meta(charset="utf-8")
+    title #{title} | FlowerShop
+    link(rel='stylesheet', href='/css/styles.css' type="text/css")
+    //- block scripts
+    //-     script(src="/js/common.js") 
+    body
+      section#body-section-2
+        #nav-catalogue
+          div.logo 
+            a(href="/") Flower Shop
+          nav 
+            ul 
+              li 
+                a(href="/") Home 
+              li 
+                a(href="/about") About 
+              li 
+                a(href="/catalogue") Catalogue 
+              li 
+                a(href="#") Contact Us
+      
+        main 
+          block layout-content-2
+      footer#footer 
+        div &copy; Copyright Ritika Mehta, 2024.

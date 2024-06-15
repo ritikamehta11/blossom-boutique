@@ -1,0 +1,20 @@
+extends layout-2
+block layout-content-2
+ 
+  .main-content-2
+    section
+      div.head
+        h2.heading Our Bouquet Collection 
+        a(href="/catalogue/add")#add-link Add
+      ul#bouquets
+        each item in items
+          li 
+            div 
+              img(src=`./images/${item.itemImg}`, alt=`${item.itemImg}`).img-catalogue
+              
+            h4 #{item.itemName}
+            p Price: #{item.itemPrice}
+            p Description: #{item.itemDesc}
+    // iw ould like to add a buy or add to cart button here 
+      
+      
